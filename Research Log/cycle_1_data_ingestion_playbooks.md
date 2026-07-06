@@ -4,8 +4,6 @@
 **Component Tested:** JSON Loading and Exploration  
 **Datasets:** Kaggle [Incident Response Playbook Dataset: [Kaggle]('https://www.kaggle.com/datasets/cyberprince/incident-response-playbook-dataset?resource=download')]
 
-[Precinct 6-Cybersecurity Logs: [Hugging-Face]('https://huggingface.co/datasets/witfoo/precinct6-cybersecurity')]
-
 ---
 
 ## 1. What am I about to do?
@@ -42,6 +40,16 @@ I loaded the JSON file by specifyig the path, and using Jq schema to laod the en
 ### Attempt 2
 I tried to import JsonLinesLoader from langchain_community.document_loaders 
 
+### Attempt 3
+I tried to load the dataset using JsonLoader
+
+
+### Attempt 4
+I tried to load the JSONL file using json.loads(). Received JSONDecodeError: Expecting ':' delimiter at character 296. Inspected the line to identify the malformed JSON.
+
+
+### Attempt 5
+I identified the malformed JSON line. The error was {"tactic","Impact"} instead of {"tactic":"Impact}. So i used a regex replacement to fix the pattern and saved a cleaned version of the file as `cleaned_incident_response_playbook_dataset.jsonl`
 ---
 
 ## 4. What were the results?
@@ -49,7 +57,19 @@ the output was an invalid SyntaxError: "specifically incorrect filepath," and "m
 
 ### Attempt 2
 
- Failed with ImportError: cannot import name 'JSONLinesLoader'.
+Failed with ImportError: cannot import name 'JSONLinesLoader'.
+
+
+### Attempt 3
+
+Failed with JSONDecodeError: Extra data
+
+### Attemp 4
+
+Failure: JSONDecodeError at char 296. Line contains invalid JSON syntax.
+
+### Attempt 5
+Successfully cleaned the file. Validated that all lines now load correctly.
 ---
 
 ## 5. Did it pass or fail?
@@ -60,6 +80,16 @@ FAIL (Syntax error)
 ### Attempt 2
 FAIL (ImportError)
 
+### Attempt 3
+
+Fail (JsonLoaderError)
+
+### Attempt 4
+FAIL
+
+### Attempt 5
+
+PASSED
 ---
 
 ## 6. Why did it pass or fail?
@@ -69,19 +99,46 @@ Incorrect filepath used: "./data/incident_response_playbook_dataset.jsonl, Pytho
 
 ### Attempt 2
 JSONLinesLoader is not available in the Python version of LangChain. The correct Python class is JSONLoader.
+
+### Attempt 3
+The JSON Line files are all objects on seperate lines, and JSONLoader expect a single JSON array
+
+### Attempt 4
+The dataset contains malformed JSON (likely a trailing comma or unescaped quote). Real-world datasets often have formatting issues.
+
+### Attempt 5
+The regex fix corrected the missing colon, and the cleaned file now contains valid JSON Lines format.
 ---
 
 ## 7. What did I learn from this?
+
+### Attempt 1
 I will ensure the file path is set accurately moving forward, and always double-check Python syntax for function arguments. Missing commas are a common mistake.
 
+### Attempt 2
 Always verify that the documentation you're reading matches your programming language (Python vs JavaScript). Python uses JSONLoader for both JSON and JSONL files.
+
+### Attempt 3
+I need to try the manual line method instead of using the JSONLoader method to load th file. 
+
+
+### Attempt 4
+First, JSON lines can contain errors, Second, Always validate/clean data before loading, and Third I can use a cleaning script to fix common issues.
+
+### Attempt 5
+Real-world datasets often have formatting errors. Automated cleaning (using regex) is an efficient way to fix common issues without manual editing.
 ---
 
 ## 8. What will I change for the next cycle?
+### Attempt 1
 Add the missing comma, correct the file path and rerun
-
+### Attempt 2
 I will continue using JSONLoader with jq_schema='.' or the line‑by‑line json.loads method for JSONL files.
+### Attempt 3
+I will try using the manual method to load the JSONLINE file. 
+### Attempt 4
+I will inspect the line causing the syntax error, fix it and either manually correct it or write a cleaning script to correct it. then attempt loading again. 
+### Attempt 5
+I will use the cleaned file for all future steps (splitting, embeddings, retrieval).
 ---
-
-
 
