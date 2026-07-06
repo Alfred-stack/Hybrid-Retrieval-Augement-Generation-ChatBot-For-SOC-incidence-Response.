@@ -27,6 +27,7 @@ Also attempted to test the chunking strategy on a sample of the log dataset.
 
 ### Attempt 3
 At this point, i have loaded the main dataset and have tried to split the dataset using the `RecursiveCharacterTextSplitter` because it handles any data format efficiently. 
+
 ---
 
 ## 4. What were the results?
