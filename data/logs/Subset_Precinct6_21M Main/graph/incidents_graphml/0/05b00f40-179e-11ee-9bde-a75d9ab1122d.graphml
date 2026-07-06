@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="n_type" for="node" attr.name="type" attr.type="string"/>
+  <key id="n_ip" for="node" attr.name="ip" attr.type="string"/>
+  <key id="n_hostname" for="node" attr.name="hostname" attr.type="string"/>
+  <key id="n_credential" for="node" attr.name="credential" attr.type="string"/>
+  <key id="n_set_roles" for="node" attr.name="set_roles" attr.type="string"/>
+  <key id="n_suspicion_score" for="node" attr.name="suspicion_score" attr.type="double"/>
+  <key id="n_products" for="node" attr.name="products" attr.type="string"/>
+  <key id="n_report_text" for="node" attr.name="report_text" attr.type="string"/>
+  <key id="e_type" for="edge" attr.name="type" attr.type="string"/>
+  <key id="e_timestamp" for="edge" attr.name="timestamp" attr.type="double"/>
+  <key id="e_message_type" for="edge" attr.name="message_type" attr.type="string"/>
+  <key id="e_action" for="edge" attr.name="action" attr.type="string"/>
+  <key id="e_protocol" for="edge" attr.name="protocol" attr.type="string"/>
+  <key id="e_src_port" for="edge" attr.name="src_port" attr.type="string"/>
+  <key id="e_dst_port" for="edge" attr.name="dst_port" attr.type="string"/>
+  <key id="e_stream" for="edge" attr.name="stream" attr.type="string"/>
+  <key id="e_label_binary" for="edge" attr.name="label_binary" attr.type="string"/>
+  <key id="e_label_confidence" for="edge" attr.name="label_confidence" attr.type="double"/>
+  <key id="e_suspicion_score" for="edge" attr.name="suspicion_score" attr.type="double"/>
+  <key id="e_mo_name" for="edge" attr.name="mo_name" attr.type="string"/>
+  <key id="e_attack_techniques" for="edge" attr.name="attack_techniques" attr.type="string"/>
+  <key id="e_attack_tactics" for="edge" attr.name="attack_tactics" attr.type="string"/>
+  <key id="e_set_roles" for="edge" attr.name="set_roles" attr.type="string"/>
+  <key id="e_lifecycle_stage" for="edge" attr.name="lifecycle_stage" attr.type="string"/>
+  <key id="e_disposition" for="edge" attr.name="disposition" attr.type="string"/>
+  <key id="e_incident_id" for="edge" attr.name="incident_id" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.117.42.171</data>
+      <data key="n_hostname">10.117.42.171</data>
+      <data key="n_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="n_suspicion_score">0.9208984375</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="04ee9403-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.228.144.213</data>
+      <data key="n_hostname">10.228.144.213</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="04eebb11-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.82.114.41</data>
+      <data key="n_hostname">10.82.114.41</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="06c80ef1-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.127.137.178</data>
+      <data key="n_hostname">10.127.137.178</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="06c83603-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.68.146.230</data>
+      <data key="n_hostname">10.68.146.230</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="06c92062-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.209.44.166</data>
+      <data key="n_hostname">10.209.44.166</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="088c0612-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.114.253.71</data>
+      <data key="n_hostname">10.114.253.71</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="088c0613-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.196.177.22</data>
+      <data key="n_hostname">10.196.177.22</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="088d3e90-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.194.251.203</data>
+      <data key="n_hostname">10.194.251.203</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="088d3e91-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.42.132.143</data>
+      <data key="n_hostname">10.42.132.143</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="088ddad4-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.17.21.39</data>
+      <data key="n_hostname">10.17.21.39</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="9bc82b21-1785-11ee-9b83-c1f432f3c3d4">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.208.160.1</data>
+      <data key="n_hostname">10.208.160.1</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="7ece56e4-1792-11ee-9c1a-0b7fd2ea616d">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.112.161.91</data>
+      <data key="n_hostname">10.112.161.91</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="e7729971-1794-11ee-b08f-49b49335b0ce">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.234.45.211</data>
+      <data key="n_hostname">10.234.45.211</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <node id="e7729975-1794-11ee-b08f-49b49335b0ce">
+      <data key="n_type">HOST</data>
+      <data key="n_ip">10.95.56.1</data>
+      <data key="n_hostname">10.95.56.1</data>
+      <data key="n_set_roles">["Exploiting Target","Exploiting Host"]</data>
+      <data key="n_suspicion_score">0.71875</data>
+      <data key="n_products">["Precinct","Meraki"]</data>
+    </node>
+    <edge id="e1" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="04ee9403-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e2" source="04ee9403-179e-11ee-9154-dd4bdbc1fba7" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e3" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="04eebb11-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e4" source="04eebb11-179e-11ee-9154-dd4bdbc1fba7" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e5" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="06c80ef1-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e6" source="06c80ef1-179e-11ee-9154-dd4bdbc1fba7" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e7" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="06c83603-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e8" source="06c83603-179e-11ee-9154-dd4bdbc1fba7" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e9" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="06c92062-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e10" source="06c92062-179e-11ee-9154-dd4bdbc1fba7" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e11" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="088c0612-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e12" source="088c0612-179e-11ee-9154-dd4bdbc1fba7" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e13" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="088c0613-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e14" source="088c0613-179e-11ee-9154-dd4bdbc1fba7" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e15" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="088d3e90-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e16" source="088d3e90-179e-11ee-9154-dd4bdbc1fba7" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e17" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="088d3e91-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e18" source="088d3e91-179e-11ee-9154-dd4bdbc1fba7" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e19" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="088ddad4-179e-11ee-9154-dd4bdbc1fba7">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e20" source="088ddad4-179e-11ee-9154-dd4bdbc1fba7" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e21" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="9bc82b21-1785-11ee-9b83-c1f432f3c3d4">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e22" source="9bc82b21-1785-11ee-9b83-c1f432f3c3d4" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e23" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="7ece56e4-1792-11ee-9c1a-0b7fd2ea616d">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e24" source="7ece56e4-1792-11ee-9c1a-0b7fd2ea616d" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e25" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="e7729971-1794-11ee-b08f-49b49335b0ce">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e26" source="e7729971-1794-11ee-b08f-49b49335b0ce" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e27" source="4a3448a2-0643-11ee-9bd9-51b109f6b127" target="e7729975-1794-11ee-b08f-49b49335b0ce">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+    <edge id="e28" source="e7729975-1794-11ee-b08f-49b49335b0ce" target="4a3448a2-0643-11ee-9bd9-51b109f6b127">
+      <data key="e_type">INCIDENT_LINK</data>
+      <data key="e_timestamp">1688167796</data>
+      <data key="e_label_binary">malicious</data>
+      <data key="e_label_confidence">0.9208984375</data>
+      <data key="e_suspicion_score">0.9208984375</data>
+      <data key="e_mo_name">Data Theft</data>
+      <data key="e_attack_techniques">["T1190","T1041","T1567"]</data>
+      <data key="e_attack_tactics">["TA0001","TA0002","TA0009","TA0010"]</data>
+      <data key="e_set_roles">["Exploiting Host","Exploiting Target"]</data>
+      <data key="e_lifecycle_stage">complete-mission</data>
+      <data key="e_disposition">Disrupted</data>
+      <data key="e_incident_id">05b00f40-179e-11ee-9bde-a75d9ab1122d</data>
+    </edge>
+  </graph>
+</graphml>

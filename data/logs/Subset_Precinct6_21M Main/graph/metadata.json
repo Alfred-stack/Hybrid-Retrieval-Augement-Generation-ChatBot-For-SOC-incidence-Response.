@@ -1,0 +1,38 @@
+{
+  "dataset_name": "WitFoo Precinct6 Cybersecurity Dataset",
+  "version": "1.0.0",
+  "description": "Labeled provenance graphs and security signal logs for IDS research",
+  "node_count": 35133,
+  "edge_count": 634190,
+  "label_distribution": {
+    "benign": 390948,
+    "suspicious": 44517,
+    "malicious": 198725
+  },
+  "edge_type_distribution": {
+    "EVENT": 45050,
+    "AUDIT_EVENT": 368118,
+    "NETWORK_FLOW": 175251,
+    "DNS_RESOLVE": 2510,
+    "INCIDENT_LINK": 43261
+  },
+  "node_type_distribution": {
+    "HOST": 33658,
+    "CREDENTIAL": 1431,
+    "SERVICE": 5,
+    "FILE": 3,
+    "CRED": 35,
+    "ACTOR": 1
+  },
+  "sanitization": {
+    "method": "4-layer (regex + format-parse + ML/NER + Claude review)",
+    "ip_replacement": "RFC5737 TEST-NET for public, remapped RFC1918 for private",
+    "org_replacement": "ORG-NNNN",
+    "host_replacement": "HOST-NNNN / host-NNNN.example.internal"
+  },
+  "formats": [
+    "NDJSON (nodes.jsonl + edges.jsonl)",
+    "NetworkX JSON",
+    "GraphML"
+  ]
+}
