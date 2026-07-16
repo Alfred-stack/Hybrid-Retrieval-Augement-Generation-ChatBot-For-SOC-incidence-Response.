@@ -1,18 +1,31 @@
 
-# DSR Iteration Log – Cycle 1: Data Ingestion (JSON)
+# DSR Iteration Log – Cycle 2: Chunking
 
-**Date:** [5th-June-2026]  
-**Component Tested:** Chunking Documents
-**Dataset:** Kaggle [Precinct 6-Cybersecurity Logs: [Hugging-Face]('https://huggingface.co/datasets/witfoo/precinct6-cybersecurity')] & Kaggle [Incident Response Playbook Dataset: [Kaggle]('https://www.kaggle.com/datasets/cyberprince/incident-response-playbook-dataset?resource=download')]
-
+**Date:** [3rd-July-2026]  
+**Component Tested:** Text Splitting / Chunking Documents
+**Dataset:** 
+- Incident Response Playbooks (JSONL) – 174 documents
+- Precinct 6 Cybersecurity Logs (Parquet) – 50,000 sampled records later reduced to 5,000 sample records. 
 ---
 
 ## 1. What am I about to do?
-I will load the datasets into a new notebook, and chunking them to see the various chunks for each dataset.
+Apply the `RecursiveCharacterTextSplitter` to both the playbook and log documents to split them into smaller, overlapping chunks. the goal here is to prepare the text for embedding (playbooks) and BM25 Dense retrieval (logs) by ensuring each chunk is a manageable size (~1000 characters) while preserving context through overlap. 
+
+**Specific tasks:**
+- Test different `chunk_size` values (500, 1000, 1500) on a sample of 100 log documents.
+- Apply the best-performing `chunk_size` to the full datasets.
+- Document the number of chunks produced for each dataset.
+
 
 ## 2. What do I expect to happen?
 
 I expect to get an output of the chunk size and chunk overlaps 
+
+- For a sample of 100 log documents, I expect the number of chunks to **decrease** as `chunk_size` increases.
+- I expect the `RecursiveCharacterTextSplitter` to split text at natural boundaries (paragraphs, sentences) using the provided separators.
+- I expect the overlap to preserve context between chunks.
+- For the full playbook dataset (174 documents), I expect approximately 200–500 chunks.
+- For the full log dataset (50,000 documents), I expect approximately 50,000–60,000 chunks.
 ---
 
 ## 3. What did I actually do?
@@ -41,6 +54,7 @@ it was successful, due to the presence of the dataset in the new notebook. the o
 
 ### Attempt 3
 it wasn't a succesful attempt as it returned an error. A syntax error, as i tried to use metadata function call on a dataset with multiple list documents which wouldnt be handled well as it isnt a single list. There was equally a syntax error `meta_data`, which is a wrong way of calling the `metadata` function. 
+
 ---
 
 ## 5. Did it pass or fail?
@@ -50,6 +64,7 @@ FAIL (Log not defined)
 
 ### Attempt 2
 PASSED 
+
 ---
 ### Attempt 3
 
@@ -67,6 +82,7 @@ the sample worked because of the presence of the new notebook
 ### Attempt 3
 
 it failed becaused i did slice the list documents to view its content, and i used a wrong function call syntax. 
+
 ---
 
 ## 7. What did I learn from this?
@@ -81,6 +97,7 @@ I have learnt that for a sample size, the chunk size reduces based on the specif
 ### Attempt 3
 
 I need to know that metadata function isnt called with an underscore, and i also need to remember that the `log_documents` dataset contains alot of list documents. 
+
 ---
 
 ## 8. What will I change for the next cycle?
@@ -88,11 +105,17 @@ I need to know that metadata function isnt called with an underscore, and i also
 I would save the notebook as a `pkl` file and import it into the new notebook.
 
 ### Attempt 2
-I would ensure that use a similar chunk_size proportion for the main dataset. 
+I would ensure that i use a similar chunk_size proportion for the main dataset. 
 
 ### Attempt 3
 i would ensure to use the right function call and then also use the right function syntax.
 ---
+
+
+
+
+
+
 
 
 

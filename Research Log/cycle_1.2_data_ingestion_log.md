@@ -1,10 +1,9 @@
 
 # DSR Iteration Log – Cycle 1: Data Ingestion (JSON)
 
-**Date:** [3rd-June-2026]  
+**Date:** [1st-July-2026]  
 **Component Tested:** JSON Loading and Exploration  
-**Dataset:** Kaggle [Precinct 6-Cybersecurity Logs: [Hugging-Face]('https://huggingface.co/datasets/witfoo/precinct6-cybersecurity')]
-
+**Dataset:** Hugging Face [Precinct 6-Cybersecurity Logs: [Hugging-Face]('https://huggingface.co/datasets/witfoo/precinct6-cybersecurity')]
 ---
 
 ## 1. What am I about to do?
@@ -13,6 +12,7 @@ I will load the Precinct 6 Cybersecurity logs from the Parquet file, and convert
 ## 2. What do I expect to happen?
 
 I expect to load the Parquet file (~2.1 million rows), sample it down to 50,000 rows, extract the `message_sanitized` field as `page_content`, and store relevant metadata. I expect the Document list to contain ~50,000 items.
+
 ---
 
 ## 3. What did I actually do?
@@ -35,6 +35,7 @@ I used pandas.read_parquet() to load the file. Iterated through rows, extracted 
 ### Attempt 1
 
 PASSED
+
 ---
 
 ## 6. Why did it pass or fail?

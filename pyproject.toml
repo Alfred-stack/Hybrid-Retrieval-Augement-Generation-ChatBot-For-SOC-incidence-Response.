@@ -12,6 +12,7 @@ dependencies = [
     "langchain>=0.3.30",
     "langchain-community>=0.3.31",
     "langchain-groq>=0.3.8",
+    "langchain-huggingface>=1.2.2",
     "langchain-text-splitters>=0.3.11",
     "openai>=2.41.1",
     "pandas>=2.3.3",
