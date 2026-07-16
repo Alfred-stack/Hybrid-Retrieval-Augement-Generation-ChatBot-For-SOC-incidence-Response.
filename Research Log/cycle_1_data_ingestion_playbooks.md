@@ -3,7 +3,6 @@
 **Date:** [30th-June-2026]  
 **Component Tested:** JSON Loading and Exploration  
 **Datasets:** Kaggle [Incident Response Playbook Dataset: [Kaggle]('https://www.kaggle.com/datasets/cyberprince/incident-response-playbook-dataset?resource=download')]
-
 ---
 
 ## 1. What am I about to do?
@@ -19,6 +18,7 @@ I will load the Json datasets including the playbook and the logs and extract th
 - Inspect the keys of the first record.
 - Extract the `playbook_text` field (or equivalent) and store it as `page_content`.
 - Store other relevant fields (e.g., `playbook_id`, `category`) as `metadata`.
+
 ---
 
 ## 2. What do I expect to happen?
@@ -29,6 +29,7 @@ Based on the Kaggle dataset description and the file structure:
 - Each record should contain a `playbook_text` field with the full textual playbook content.
 - I expect to successfully convert at least **50 records** into LangChain `Document` objects.
 - The `page_content` should contain readable text, and the `metadata` should include identifiers like `id` and `category`.
+
 ---
 
 ## 3. What did I actually do?
@@ -50,6 +51,7 @@ I tried to load the JSONL file using json.loads(). Received JSONDecodeError: Exp
 
 ### Attempt 5
 I identified the malformed JSON line. The error was {"tactic","Impact"} instead of {"tactic":"Impact}. So i used a regex replacement to fix the pattern and saved a cleaned version of the file as `cleaned_incident_response_playbook_dataset.jsonl`
+
 ---
 
 ## 4. What were the results?
@@ -90,6 +92,7 @@ FAIL
 ### Attempt 5
 
 PASSED
+
 ---
 
 ## 6. Why did it pass or fail?
@@ -108,6 +111,7 @@ The dataset contains malformed JSON (likely a trailing comma or unescaped quote)
 
 ### Attempt 5
 The regex fix corrected the missing colon, and the cleaned file now contains valid JSON Lines format.
+
 ---
 
 ## 7. What did I learn from this?
@@ -127,6 +131,7 @@ First, JSON lines can contain errors, Second, Always validate/clean data before 
 
 ### Attempt 5
 Real-world datasets often have formatting errors. Automated cleaning (using regex) is an efficient way to fix common issues without manual editing.
+
 ---
 
 ## 8. What will I change for the next cycle?
@@ -140,5 +145,6 @@ I will try using the manual method to load the JSONLINE file.
 I will inspect the line causing the syntax error, fix it and either manually correct it or write a cleaning script to correct it. then attempt loading again. 
 ### Attempt 5
 I will use the cleaned file for all future steps (splitting, embeddings, retrieval).
+
 ---
 

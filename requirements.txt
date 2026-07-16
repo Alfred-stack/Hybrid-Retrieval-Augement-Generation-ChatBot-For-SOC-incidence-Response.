@@ -9,6 +9,7 @@ tiktoken>=0.13.0
 rank-bm25>=0.2.2
 torch>=2.0.0
 transformers>=4.30.0
+langchain_huggingface
 
 # Data handling
 pyarrow>=14.0.0
