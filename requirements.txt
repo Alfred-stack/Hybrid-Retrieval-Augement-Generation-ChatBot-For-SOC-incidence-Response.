@@ -27,3 +27,6 @@ ipykernel>=6.31.0
 # Evaluation
 scikit-learn>=1.3.0
 
+#Python libraries for displaying graphs 
+matplotlib 
+

@@ -1,0 +1,62 @@
+
+# DSR Iteration Log – Cycle 3.2.1: Checking Cosine Similarity from Log_texts using BM25
+
+**Date:** [20th-July-2026]  
+**Component Tested:** Cosine Similarity
+**Dataset:** 
+ - Log_chunks - 11016
+---
+
+## 1. What am I about to do?
+
+I am about to test the retieval functions on the Log dataset for cosine similarity based on the BM25 Keyword Scoring.
+I will run test queries to see if the top results are relevant.
+
+
+
+---
+
+## 2. What do I expect to happen?
+For the Log_chunks, when a query such as `"10.184.211.180"` an IP is passed, it should return log entries containing that IP
+
+
+---
+
+## 3. What did I actually do?
+
+### Attempt 1
+I implemented the BM25 search function using Cosine Similarity. 
+
+---
+
+## 4. What were the results?
+
+### Attempt 1
+The function executed successfully for the query trial `Query_log= 10.184.211.180 failed authentication", top 10 relevant log entries were result with the highest similarity score of 0.87
+
+---
+
+## 5. Did it pass or fail?
+
+### Attempt 1
+PASSED 
+
+---
+
+## 6. Why did it pass or fail?
+The function passed because all variables were properly named this time, and the query was tokenized appropraitely as well as the scores embedded with the retrieved log entries. 
+---
+
+## 7. What did I learn from this?
+
+### Attempt 1
+I learnt to ensure all variables are defined adequately which made the function run smoothly without errors. 
+---
+
+## 8. What will I change for the next cycle?
+The next step will be to create the Vector Store using `Faiss` and ensure all embeddings are stored adequately before testing for retrieval and reranking to improve the semantic retrieval of the sentence transformer model used. 
+
+---
+
+
+
