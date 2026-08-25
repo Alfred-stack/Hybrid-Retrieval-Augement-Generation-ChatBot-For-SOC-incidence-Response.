@@ -15,7 +15,7 @@ from langchain_core.retrievers import BaseRetriever
 
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain_community.chat_message_histories.mongodb import MongoDBChatMessageHistory
+from langchain_mongodb.chat_message_histories import MongoDBChatMessageHistory
 from langchain_groq import ChatGroq
 
 from rank_bm25 import BM25Okapi
