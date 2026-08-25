@@ -4,7 +4,22 @@ __pycache__/
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
 
 # Virtual environments
-.venv
+.venv/
+
+# Environment variables and secrets
+.env
+.env_new
+
+# Local runtime files
+*.log
+
+# Node dependencies
+node_modules/
+
+# Frontend build output
+frontend/node_modules/
+frontend/dist/
+frontend/build/
